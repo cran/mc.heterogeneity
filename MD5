@@ -1,0 +1,17 @@
+b44c4ee7f4a7994475bbcba944b49b8c *DESCRIPTION
+43cf1348b3140d7eb1a3c7012f4ffdaa *NAMESPACE
+ec0496ade3fa7bd7d29d79706f0d821a *R/Internal.R
+013147529e4598de6a1afbf9c6052cbb *R/mc.d.R
+724bc42e7642e2de39bc3b3452a77b59 *R/mc.fcor.R
+3bb61e9c08e15214b3b1089b8dc634a5 *R/mc.lnOR.R
+33889b61a62f2bfea2819f74d9bf6121 *R/sysdata.rda
+3c79d8beba0e23c0cadc540416ebf1b4 *README.md
+f0157339ba19805ea901414350c69ae9 *build/vignette.rds
+421d7823f59f427f6b642865386ff287 *inst/doc/mc.heterogeneity.R
+8a4aa742ee720788bfca5c6388d45f7b *inst/doc/mc.heterogeneity.Rmd
+511891e4ea6ea69cd4c26c826681c664 *inst/doc/mc.heterogeneity.html
+adeebeccd32ab470ca8f9955ba1f836c *man/figures/README-pressure-1.png
+a109a9046257abdafb1342aa70e1f988 *man/mc.d.Rd
+a2c19f8646711423e830d0a6f8940465 *man/mc.fcor.Rd
+94bc16968bf6f5513c13cb075f4949f7 *man/mc.lnOR.Rd
+8a4aa742ee720788bfca5c6388d45f7b *vignettes/mc.heterogeneity.Rmd
