@@ -4,8 +4,15 @@
 \alias{mc.fcor}
 \title{Fisher-transformed Pearson's correlation: Monte Carlo Based Heterogeneity Test for Between-study Heterogeneity in Random- or Mixed- Effects Model}
 \usage{
-mc.fcor(n, z, model = "random", mods = NULL, nrep = 10^4,
-  p_cut = 0.05, mc.include = FALSE)
+mc.fcor(
+  n,
+  z,
+  model = "random",
+  mods = NULL,
+  nrep = 10^4,
+  p_cut = 0.05,
+  mc.include = FALSE
+)
 }
 \arguments{
 \item{n}{a vector of sample sizes in each of the included studies.}
@@ -14,7 +21,7 @@ mc.fcor(n, z, model = "random", mods = NULL, nrep = 10^4,
 
 \item{model}{choice of random- or mixed- effects models. Can only be set to \code{"random"}, or \code{"mixed"}.}
 
-\item{mods}{optional argument to include one or more moderators in the model. \code{mods} is NULL for random-effects model and a dataframe for mixed-effects model. A single moderator can be given as a vector of length \eqn{k} specifying the values of the moderator. Multiple moderators are specified by giving a matrix with \eqn{k} rows and as many columns as there are moderator variables. See \code{\link[metafor]{rma}} for more details.}
+\item{mods}{optional argument to include one or more moderators in the model. \code{mods} is NULL for random-effects model and a dataframe for mixed-effects model. A single moderator can be given as a vector of length \eqn{k} specifying the values of the moderator. Multiple moderators are specified by giving a matrix with \eqn{k} rows and as many columns as there are moderator variables. See \code{\link[metafor:rma.uni]{rma}} for more details.}
 
 \item{nrep}{number of replications used in Monte Carlo Simulations. Default to 10^4.}
 
@@ -43,6 +50,9 @@ z <- 1/2*log((1+r)/(1-r))
 \dontrun{
 #' mc.run <- mc.fcor(n, z, model = 'random', p_cut = 0.05)
 }
+## Note: this mc.fcor() function will soon be deprecated
+## and replaced by \link[boot.heterogeneity]{boot.fcor} in
+## package [boot.heterogeneity](https://CRAN.R-project.org/package=boot.heterogeneity).
 }
 \references{
 Zuckerman, M. (1994). Behavioral expressions and biosocial bases of sensation seeking. New York, NY: Cambridge University Press.

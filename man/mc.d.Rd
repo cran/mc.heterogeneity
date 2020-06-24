@@ -4,8 +4,17 @@
 \alias{mc.d}
 \title{Standardized Mean Differences (d): Monte Carlo Based Heterogeneity Test for Between-study Heterogeneity in Random- or Mixed- Effects Model}
 \usage{
-mc.d(n1, n2, est, model = "random", adjust = FALSE, mods = NULL,
-  nrep = 10^4, p_cut = 0.05, mc.include = FALSE)
+mc.d(
+  n1,
+  n2,
+  est,
+  model = "random",
+  adjust = FALSE,
+  mods = NULL,
+  nrep = 10^4,
+  p_cut = 0.05,
+  mc.include = FALSE
+)
 }
 \arguments{
 \item{n1}{a vector of sample sizes from group 1 in each of the included studies.}
@@ -18,7 +27,7 @@ mc.d(n1, n2, est, model = "random", adjust = FALSE, mods = NULL,
 
 \item{adjust}{if biased estimates (i.e., g values) are provided, \code{adjust} must be set to \code{TRUE} to compensate for small sample bias. By default, \code{adjust} is set to \code{FALSE}.}
 
-\item{mods}{optional argument to include one or more moderators in the model. \code{mods} is NULL for random-effects model and a dataframe for mixed-effects model. A single moderator can be given as a vector of length \eqn{k} specifying the values of the moderator. Multiple moderators are specified by giving a matrix with \eqn{k} rows and as many columns as there are moderator variables. See \code{\link[metafor]{rma}} for more details.}
+\item{mods}{optional argument to include one or more moderators in the model. \code{mods} is NULL for random-effects model and a dataframe for mixed-effects model. A single moderator can be given as a vector of length \eqn{k} specifying the values of the moderator. Multiple moderators are specified by giving a matrix with \eqn{k} rows and as many columns as there are moderator variables. See \code{\link[metafor:rma.uni]{rma}} for more details.}
 
 \item{nrep}{number of replications used in Monte Carlo Simulations. Default to 10^4.}
 
@@ -59,6 +68,9 @@ hypo_moder <- mc.heterogeneity:::hypo_moder
 mc.run3 <- mc.d(n1 = hypo_moder$n1, n2 = hypo_moder$n2, est = hypo_moder$d, model = 'mixed',
 mods = cbind(hypo_moder$cov.z1, hypo_moder$cov.z2, hypo_moder$cov.z3), p_cut = 0.05)
 }
+## Note: this mc.d() function will soon be deprecated
+## and replaced by \link[boot.heterogeneity]{boot.d} in
+## package [boot.heterogeneity](https://CRAN.R-project.org/package=boot.heterogeneity).
 }
 \references{
 Hedges, L. V. (1981). Distribution theory for glass’s estimator of effect size and related estimators. Journal of Educational and Behavioral Statistics, 6(2), 107–128.

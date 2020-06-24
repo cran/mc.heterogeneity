@@ -7,8 +7,17 @@
 C. Silagy (2003), Nicotine replacement therapy for smoking cessation (Cochrane Review). The Cochrane Library, 4, John Wiley \& Sons, Chichester.
 }
 \usage{
-mc.lnOR(n_00, n_01, n_10, n_11, model = "random", mods = NULL,
-  nrep = 10^4, p_cut = 0.05, mc.include = FALSE)
+mc.lnOR(
+  n_00,
+  n_01,
+  n_10,
+  n_11,
+  model = "random",
+  mods = NULL,
+  nrep = 10^4,
+  p_cut = 0.05,
+  mc.include = FALSE
+)
 }
 \arguments{
 \item{n_00}{a vector of number of participants who score negatively on both Y1 and Y2 (e.g., mortality cases in the control group).}
@@ -21,7 +30,7 @@ mc.lnOR(n_00, n_01, n_10, n_11, model = "random", mods = NULL,
 
 \item{model}{choice of random- or mixed- effects models. Can only be set to \code{"random"}, or \code{"mixed"}.}
 
-\item{mods}{optional argument to include one or more moderators in the model. \code{mods} is NULL for random-effects model and a dataframe for mixed-effects model. A single moderator can be given as a vector of length \eqn{k} specifying the values of the moderator. Multiple moderators are specified by giving a matrix with \eqn{k} rows and as many columns as there are moderator variables. See \code{\link[metafor]{rma}} for more details.}
+\item{mods}{optional argument to include one or more moderators in the model. \code{mods} is NULL for random-effects model and a dataframe for mixed-effects model. A single moderator can be given as a vector of length \eqn{k} specifying the values of the moderator. Multiple moderators are specified by giving a matrix with \eqn{k} rows and as many columns as there are moderator variables. See \code{\link[metafor:rma.uni]{rma}} for more details.}
 
 \item{nrep}{number of replications used in Monte Carlo Simulations. Default to 10^4.}
 
@@ -53,6 +62,9 @@ lnOR <- log(n_11*n_00/n_01/n_10)
 \dontrun{
 mc.run <- mc.lnOR(n_00, n_01, n_10, n_11, model = 'random', p_cut = 0.05)
 }
+## Note: this mc.lnOR() function will soon be deprecated
+## and replaced by \link[boot.heterogeneity]{boot.lnOR} in
+## package [boot.heterogeneity](https://CRAN.R-project.org/package=boot.heterogeneity).
 }
 \references{
 Anscombe, F. J. (1956). On estimating binomial response relations. Biometrika, 43(3/4), 461–464.
