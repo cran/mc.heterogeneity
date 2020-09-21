@@ -23,12 +23,12 @@
 
 #' @references Anscombe, F. J. (1956). On estimating binomial response relations. Biometrika, 43(3/4), 461–464.
 #' @references Haldane, J. (1940). The mean and variance of| chi 2, when used as a test of homogeneity, when expectations are small. Biometrika, 31(3/4), 346–355.
-#' @references Viechtbauer, W. (2010). Conducting meta-analyses in R with the metafor package. Journal of Statistical Software, 36(3), 1-48. URL: http://www.jstatsoft.org/v36/i03/
+#' @references Viechtbauer, W. (2010). Conducting meta-analyses in R with the metafor package. Journal of Statistical Software, 36(3), 1-48. URL: https://www.jstatsoft.org/v36/i03/
 #' @source C. Silagy (2003), Nicotine replacement therapy for smoking cessation (Cochrane Review). The Cochrane Library, 4, John Wiley \& Sons, Chichester.
 
 #' @examples
 #' # A meta-analysis consists of 26 studies on nicotine replacement therapy for smoking cessation
-#' library(HSAUR2)
+#' library(HSAUR3)
 #' data(smoking)
 #' # Y1: receive treatment; Y2: stop smoking
 #' n_00 <- smoking$tc - smoking$qc  # not receive treatement yet not stop smoking

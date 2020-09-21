@@ -77,5 +77,5 @@ Hedges, L. V. (1981). Distribution theory for glass’s estimator of effect size
 
 Hedges, L. V., Giaconia, R. M., & Gage, N. L. (1981). Meta-analysis of the effect of open and traditional instruction. Stanford, CA: Stanford University, Program on Teaching Effectiveness.
 
-Viechtbauer, W. (2010). Conducting meta-analyses in R with the metafor package. Journal of Statistical Software, 36(3), 1-48. URL: http://www.jstatsoft.org/v36/i03/
+Viechtbauer, W. (2010). Conducting meta-analyses in R with the metafor package. Journal of Statistical Software, 36(3), 1-48. URL: https://www.jstatsoft.org/v36/i03/
 }

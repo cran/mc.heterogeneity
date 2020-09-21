@@ -7,12 +7,6 @@ knitr::opts_chunk$set(
 ## ----setup, eval = FALSE------------------------------------------------------
 #  install.packages("mc.heterogeneity")
 
-## ---- eval = FALSE------------------------------------------------------------
-#  #install.packages("devtools")
-#  library(devtools)
-#  devtools::install_github("gabriellajg/mc.heterogeneity", force = TRUE, build_vignettes = TRUE)
-#  library(mc.heterogeneity)
-
 ## ---- echo=FALSE--------------------------------------------------------------
 library("mc.heterogeneity")
 
@@ -93,7 +87,7 @@ z <- 1/2*log((1+r)/(1-r))
 #  #> mc.REML  6.133111 0.00400000           sig
 
 ## -----------------------------------------------------------------------------
-library(HSAUR2)
+library(HSAUR3)
 data(smoking)
 
 ## -----------------------------------------------------------------------------

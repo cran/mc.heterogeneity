@@ -39,14 +39,7 @@ Install the released version of mc.heterogeneity from [CRAN](https://CRAN.R-proj
 install.packages("mc.heterogeneity")
 ```
 
-Or install the development version from [GitHub](https://github.com/gabriellajg/mc.heterogeneity) with:
-
-```{r, eval = FALSE}
-#install.packages("devtools")
-library(devtools)
-devtools::install_github("gabriellajg/mc.heterogeneity", force = TRUE, build_vignettes = TRUE)
-library(mc.heterogeneity)
-```
+And load the library:
 
 ```{r, echo=FALSE}
 library("mc.heterogeneity")
@@ -210,10 +203,10 @@ mc.run
 
 `mc.lnOR()` is the function to test the between-study heterogeneity in meta-analysis of Natural-logarithm-transformed odds ratio (OR). 
 
-Load the example dataset `smoking` from R package `HSAUR2`: 
+Load the example dataset `smoking` from R package `HSAUR3`: 
 
 ```{r}
-library(HSAUR2)
+library(HSAUR3)
 data(smoking)
 ```
 

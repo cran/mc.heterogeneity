@@ -1,7 +1,7 @@
 Package: mc.heterogeneity
 Type: Package
 Title: A Monte Carlo Based Heterogeneity Test for Meta-Analysis
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: c(person("Han", "Du", role = "aut",
                      email = "hdu@psych.ucla.edu"),
               person("Ge", "Jiang", role = c("aut", "cre"), email = "gejiang2@illinois.edu"),
@@ -11,15 +11,15 @@ Description: Implements a Monte Carlo Based Heterogeneity Test for standardized 
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
 Depends: R (>= 3.1.0)
 Imports: stats, metafor, utils, boot.heterogeneity
-Suggests: base, HSAUR2, roxygen2, knitr, rmarkdown
+Suggests: base, HSAUR3, roxygen2, knitr, rmarkdown
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2020-06-23 22:32:07 UTC; gejiang
+Packaged: 2020-09-21 17:48:26 UTC; gejiang
 Author: Han Du [aut],
   Ge Jiang [aut, cre],
   Zijun Ke [ctb]
 Repository: CRAN
-Date/Publication: 2020-06-24 08:40:06 UTC
+Date/Publication: 2020-09-21 18:30:02 UTC
